@@ -2,7 +2,7 @@
   "name": "slobodan-react",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://andrew-gil.github.io",
+  "homepage": "https://funreadinggames.github.io",
   "dependencies": {
     "-": "^0.0.1",
     "@emailjs/browser": "^3.6.2",
