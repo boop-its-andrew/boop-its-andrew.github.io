@@ -1,0 +1,50 @@
+.home-page {
+    #movetxt {
+        position: relative;
+        left: 6%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 90%;
+        //max-height: 100%;
+
+        -webkit-animation: moving 4s forwards;
+        animation: moving 4s forwards;
+    }
+    
+    @keyframes moving {
+        from {transform: translateY(0px);}
+        to {top: -5%; transform: translateY(0%);}
+    }
+    
+    h2 {
+        color: #fff;
+        font-size: 53px;
+        margin: 0;
+        font-family: 'Times New Roman';
+        font-weight: 400;
+    }
+    h3 {
+        position: relative;
+        left: 6%;
+        top: 5%;
+        width: 90%;
+        color: #fff;
+        font-size: 32px;
+        margin-top: 10px;
+        font-family: 'Times New Roman';
+        font-weight: 1;
+        animation: fadeIn 1s 3.5s backwards;
+    }
+    p {
+        position: relative;
+        left: 6%;
+        top: 5%;
+        width: 90%;
+        color: #fff;
+        font-size: 22px;
+        margin-top: 10px;
+        font-family: 'Times New Roman';
+        font-weight: 1;
+        animation: fadeIn 1s 3.5s backwards;
+    }
+}

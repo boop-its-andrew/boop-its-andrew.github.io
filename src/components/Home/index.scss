@@ -1,0 +1,151 @@
+.home-page {
+    .text-zone {
+        position: relative;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 90%;
+        max-height: 90%;
+
+        -webkit-animation: moveWelcome 4s forwards;
+        animation: moveWelcome 4s forwards;
+    }
+
+    @keyframes moveWelcome {
+        from {transform: translateY(0px);}
+        to {top: 0%; transform: translateY(15%);}
+    }
+
+    h1 {
+        color: #fff;
+        font-size: 53px;
+        margin: 0;
+        font-family: 'Coolvetica';
+        font-weight: 400;
+
+        /*
+        &::before {
+            content: '<h1>';
+            font-family: 'La Belle Aurore';
+            color: #ffd700;
+            font-size: 18px;
+            position: absolute;
+            margin-top: -40px;
+            left: 15px;
+            opacity: 0.6;
+        }
+
+        &::after {
+            content: '<h1/>';
+            font-family: 'La Belle Aurore';
+            color: #ffd700;
+            font-size: 18px;
+            position: absolute;
+            margin-top: 18px;
+            margin-left: 20px;
+            animation: fadeIn 1s 1.7s backwards;
+            opacity: 0.6;
+        }
+        
+        img {
+            width: 32px;
+            margin-left: 20px;
+            opacity: 0;
+            height: auto;
+            animation: rotateIn 1s linear both;
+            animation-delay: 1.4s;
+        }
+        */
+    }
+    h2 {
+        color: #8d8d8d;
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 11px;
+        font-family: sans-serif;
+        letter-spacing: 3px;
+        animation: fadeIn 1s 1.8s backwards;
+    }
+    
+    .flat-button {
+        color: #fff;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 4px;
+        font-family: sans-serif;
+        text-decoration: none;
+        padding: 10px 18px;
+        border: 1px solid #fff;
+        margin-top: 25px;
+        margin-left: 25px;
+        margin-right: 25px;
+        float: left;
+        animation: fadeIn 1s 3s backwards;
+        white-space: nowrap;
+        height:80px;
+        width:270px;
+        text-align: center;
+        -webkit-transition:  height 1s;
+        transition:  1s;
+
+        
+        &#hangman {
+            &:hover {
+                //background-image: url('../../assets/images/Hangman.png');
+                //background: #ffd700;
+                //color: #333;
+                //height:400px;
+                //width: 280px;
+                height: 100px;
+                width: 280px;
+                /*
+                &:after {
+                    white-space: pre-wrap;
+                    content: '\A \A Play a game';
+                }
+                */
+            }
+        }
+        &#sprhyming {
+            &:hover {
+                //background-image: url('../../assets/images/Hangman.png');
+                //background: #ffd700;
+                //color: #333;
+                //height:400px;
+                //width: 280px;
+                height: 100px;
+                width: 280px;
+            }
+        }
+        &#mprhyming {
+            &:hover {
+                //background-image: url('../../assets/images/Hangman.png');
+                //background: #ffd700;
+                //color: #333;
+                //height:400px;
+                //width: 280px;
+                height: 130px;
+                width: 280px;
+                &:after {
+                    animation: fadein 2s;
+                    white-space: pre-wrap;
+                    content: '\A \A coming soon...';
+                }
+                @keyframes fadein {
+                    from {
+                        opacity:0;
+                    }
+                    to {
+                        opacity:1;
+                    }
+                }
+            }
+        }
+        /*
+        @keyframes moveHover {
+            from {height:80px;}
+            to {height:400px;}
+        }
+        */
+    }
+}

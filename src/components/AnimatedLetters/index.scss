@@ -1,0 +1,27 @@
+.text-animate {
+    display: inline-block;
+    opacity: 0;
+    animation: bounceIn 1s 1s; //duration 1 second, delay 1 second
+    animation-fill-mode: forwards; //makes animation visible
+    min-width: 10px;
+}
+//hover effect for each letter
+.text-animate-hover {
+    min-width: 10px;
+    display: inline-block;
+    animation-fill-mode: both;
+
+    &:hover {
+        animation: rubberBand 1s;
+        color: #ffd700;
+    }
+}
+
+//you can code for loop within scss so that you can add a delay
+//to each letter. Inside each loop you create a text-animate class 
+//that adds a tenth of a second delay to each letter
+@for $i from 1 through 74 {
+    .text-animate._#{$i} {
+        animation-delay: #{$i / 30}s;
+    }
+}
